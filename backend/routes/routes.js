@@ -10,19 +10,19 @@ const {
 } = require('../controller/user');
 
 // Get all users
-router.get('/get_user', getUsers);
+router.get('/user', getUsers);
 
 
 // Get one user by ID
-router.get('/get_user/:id', getUserById); 
+router.get('/user/:id', getUserById); 
 
 // Add new user
-router.post('/add_user', addUser);
+router.post('/user', addUser);
 
 // Update user by ID
-router.put('/update_user/:id', updateUser);
+router.put('/user/:id', updateUser);
 
 // Delete user by ID
-router.delete('/delete_user/:id', deleteUser);
+router.delete('/user/:id', deleteUser);
 
 module.exports = router;
